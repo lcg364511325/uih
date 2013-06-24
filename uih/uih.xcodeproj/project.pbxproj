@@ -18,6 +18,7 @@
 		7C8E939F17731FFD00D99B37 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8E939E17731FFD00D99B37 /* Default-568h@2x.png */; };
 		7C8E93A217731FFD00D99B37 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8E93A017731FFD00D99B37 /* MainStoryboard.storyboard */; };
 		7C8E93A517731FFD00D99B37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8E93A417731FFD00D99B37 /* ViewController.m */; };
+		7CB9E5A21778925E00783A25 /* testCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9E5A11778925E00783A25 /* testCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		7C8E93A117731FFD00D99B37 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		7C8E93A317731FFD00D99B37 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7C8E93A417731FFD00D99B37 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7CB9E5A01778925E00783A25 /* testCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testCell.h; sourceTree = "<group>"; };
+		7CB9E5A11778925E00783A25 /* testCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				7C8E93A317731FFD00D99B37 /* ViewController.h */,
 				7C8E93A417731FFD00D99B37 /* ViewController.m */,
 				7C8E938F17731FFD00D99B37 /* Supporting Files */,
+				7CB9E5A01778925E00783A25 /* testCell.h */,
+				7CB9E5A11778925E00783A25 /* testCell.m */,
 			);
 			path = uih;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 				7C8E939517731FFD00D99B37 /* main.m in Sources */,
 				7C8E939917731FFD00D99B37 /* AppDelegate.m in Sources */,
 				7C8E93A517731FFD00D99B37 /* ViewController.m in Sources */,
+				7CB9E5A21778925E00783A25 /* testCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +304,7 @@
 				7C8E93AA17731FFD00D99B37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

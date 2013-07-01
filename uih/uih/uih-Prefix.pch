@@ -11,4 +11,21 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+
+    /*接口地址*/
+    //域名
+    #define domain  @"http://192.168.1.104/"
+
+    //养儿囧好大
+    #define api_news_yejhd @"Application/nologininformation.ashx?action=loadinformation&atricletype=5"
+    //育儿好望角
+    #define api_news_yehwj @"Application/nologininformation.ashx?action=loadinformation&atricletype=4"
+    //特色教学专栏
+    #define api_news_tsjx @"Application/nologininformation.ashx?action=loadinformation&atricletype=2"
+    //教育新信息
+    #define api_news_jyxxx @"Application/nologininformation.ashx?action=loadinformation&atricletype=1"
+
+    //页面行数
+    #define PSize 20
+
 #endif

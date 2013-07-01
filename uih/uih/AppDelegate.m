@@ -12,6 +12,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    DataService * ds = [[DataService alloc] init];
+    
+    [ds GetNews_yejhd];
     
     return YES;
 }

@@ -12,9 +12,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    DataService * ds = [[DataService alloc] init];
+    //DataService * ds = [[DataService alloc] init];
     
-    [ds GetNews_yejhd];
+    //[ds GetNews_yejhd];
+    
+    //显示系统托盘
+    [application setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+    
+    //初始化
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    //专题
+    Yejhd * yejhd = [[Yejhd alloc] init];
+    
+    UINavigationController * yejhdNav = [[UINavigationController alloc] initWithRootViewController:yejhd];
+
+    self.window.rootViewController = yejhdNav;
+    
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

@@ -10,7 +10,6 @@
 
 @interface NewsEntity : NSObject
 
-@property (nonatomic, retain) NSString * total;
 @property (nonatomic, retain) NSString * peta_rn;
 @property (nonatomic, retain) NSString * ID;
 @property (nonatomic, retain) NSString * ArticleType;

@@ -7,7 +7,34 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MBProgressHUD.h"
+#import "EGORefreshTableHeaderView.h"
+#import "DataService.h"
+#import "YejhdCell.h"
+#import "NewsEntity.h"
 
-@interface Yejhd : UIViewController
+@interface Yejhd : UIViewController<UITableViewDelegate,UITableViewDataSource,MBProgressHUDDelegate, UITabBarControllerDelegate,UIAlertViewDelegate>
+{
+    NSMutableArray * lists;
+    BOOL isLoading;
+    BOOL isLoadOver;
+    int Page;
+    
+    //下拉刷新
+    EGORefreshTableHeaderView *_refreshHeaderView;
+    BOOL _reloading;
+}
+
+@property (strong, nonatomic) IBOutlet UITableView * tableLists;
+
+- (void)reload:(BOOL)noRefresh;
+
+- (void)clear;  //清空
+
+- (void)myInit;
+
+-(void)reloadTableViewDataSource;
+
+-(void)doneLoadingTableViewData;
 
 @end

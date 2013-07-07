@@ -11,13 +11,13 @@
 @implementation DataService
 
 
--(NSMutableArray*)GetNews_yejhd
+-(NSMutableArray*)GetNews_yejhd:(int)Page
 {
     NSMutableArray * m = [[NSMutableArray alloc] initWithCapacity:20];
     
     NSString * URL = [NSString stringWithFormat:@"%@%@",domain,api_news_yejhd];
     
-    NSMutableDictionary * dict = [self GetDataService:URL forPage:1 forPageSize:PSize];
+    NSMutableDictionary * dict = [self GetDataService:URL forPage:Page forPageSize:[PSize intValue]];
     
     NSError *error = nil;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&error];

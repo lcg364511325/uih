@@ -12,10 +12,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //DataService * ds = [[DataService alloc] init];
-    
-    //[ds GetNews_yejhd];
-    
     //显示系统托盘
     [application setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
     

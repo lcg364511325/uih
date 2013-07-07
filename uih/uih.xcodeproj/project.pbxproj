@@ -21,11 +21,22 @@
 		5F971D4917885144006C1F16 /* Yejhd.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F971D4717885144006C1F16 /* Yejhd.xib */; };
 		5F971D4C178855E5006C1F16 /* YejhdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F971D4B178855E5006C1F16 /* YejhdCell.m */; };
 		5F971D4E1788563C006C1F16 /* YejhdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F971D4D1788563C006C1F16 /* YejhdCell.xib */; };
+		5FDF5C4C178962A400F2DC8E /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDF5C48178962A400F2DC8E /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5FDF5C4D178962A400F2DC8E /* LoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDF5C4A178962A400F2DC8E /* LoadingCell.m */; };
+		5FDF5C4E178962A400F2DC8E /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FDF5C4B178962A400F2DC8E /* LoadingCell.xib */; };
+		5FDF5C52178964DF00F2DC8E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDF5C51178964DF00F2DC8E /* QuartzCore.framework */; };
+		5FDF5C551789663B00F2DC8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8E938C17731FFD00D99B37 /* CoreGraphics.framework */; };
+		5FDF5C5A1789730900F2DC8E /* NdUncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDF5C571789730900F2DC8E /* NdUncaughtExceptionHandler.m */; };
+		5FDF5C5B1789730900F2DC8E /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDF5C591789730900F2DC8E /* Tool.m */; };
+		5FDF5C5E1789731200F2DC8E /* DataSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDF5C5D1789731200F2DC8E /* DataSingleton.m */; };
+		5FDF5C62178974AE00F2DC8E /* GCDiscreetNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDF5C61178974AE00F2DC8E /* GCDiscreetNotificationView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5FDF5C661789751800F2DC8E /* ApiError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDF5C651789751800F2DC8E /* ApiError.m */; };
+		5FDF5C681789782000F2DC8E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDF5C671789782000F2DC8E /* AudioToolbox.framework */; };
+		5FDF5C6C1789786900F2DC8E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDF5C6B1789786900F2DC8E /* AVFoundation.framework */; };
 		5FE4BBD51780661500036E09 /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE4BBD41780661500036E09 /* DataService.m */; };
 		5FE4BBD8178096A400036E09 /* NewsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE4BBD7178096A400036E09 /* NewsEntity.m */; };
 		7C8E938917731FFD00D99B37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8E938817731FFD00D99B37 /* UIKit.framework */; };
 		7C8E938B17731FFD00D99B37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8E938A17731FFD00D99B37 /* Foundation.framework */; };
-		7C8E938D17731FFD00D99B37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8E938C17731FFD00D99B37 /* CoreGraphics.framework */; };
 		7C8E939317731FFD00D99B37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C8E939117731FFD00D99B37 /* InfoPlist.strings */; };
 		7C8E939517731FFD00D99B37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8E939417731FFD00D99B37 /* main.m */; };
 		7C8E939917731FFD00D99B37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8E939817731FFD00D99B37 /* AppDelegate.m */; };
@@ -59,6 +70,27 @@
 		5F971D4A178855E5006C1F16 /* YejhdCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YejhdCell.h; path = News/YejhdCell.h; sourceTree = "<group>"; };
 		5F971D4B178855E5006C1F16 /* YejhdCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YejhdCell.m; path = News/YejhdCell.m; sourceTree = "<group>"; };
 		5F971D4D1788563C006C1F16 /* YejhdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YejhdCell.xib; path = News/YejhdCell.xib; sourceTree = "<group>"; };
+		5FDF5C47178962A400F2DC8E /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		5FDF5C48178962A400F2DC8E /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		5FDF5C49178962A400F2DC8E /* LoadingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingCell.h; sourceTree = "<group>"; };
+		5FDF5C4A178962A400F2DC8E /* LoadingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingCell.m; sourceTree = "<group>"; };
+		5FDF5C4B178962A400F2DC8E /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		5FDF5C4F178963D100F2DC8E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		5FDF5C51178964DF00F2DC8E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5FDF5C531789651C00F2DC8E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5FDF5C561789730800F2DC8E /* NdUncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NdUncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		5FDF5C571789730900F2DC8E /* NdUncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NdUncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		5FDF5C581789730900F2DC8E /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		5FDF5C591789730900F2DC8E /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
+		5FDF5C5C1789731200F2DC8E /* DataSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSingleton.h; sourceTree = "<group>"; };
+		5FDF5C5D1789731200F2DC8E /* DataSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSingleton.m; sourceTree = "<group>"; };
+		5FDF5C60178974AE00F2DC8E /* GCDiscreetNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDiscreetNotificationView.h; sourceTree = "<group>"; };
+		5FDF5C61178974AE00F2DC8E /* GCDiscreetNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDiscreetNotificationView.m; sourceTree = "<group>"; };
+		5FDF5C641789751800F2DC8E /* ApiError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiError.h; sourceTree = "<group>"; };
+		5FDF5C651789751800F2DC8E /* ApiError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiError.m; sourceTree = "<group>"; };
+		5FDF5C671789782000F2DC8E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5FDF5C691789785800F2DC8E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5FDF5C6B1789786900F2DC8E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		5FE4BBD31780661500036E09 /* DataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataService.h; sourceTree = "<group>"; };
 		5FE4BBD41780661500036E09 /* DataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataService.m; sourceTree = "<group>"; };
 		5FE4BBD6178096A400036E09 /* NewsEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsEntity.h; sourceTree = "<group>"; };
@@ -83,10 +115,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FDF5C6C1789786900F2DC8E /* AVFoundation.framework in Frameworks */,
+				5FDF5C681789782000F2DC8E /* AudioToolbox.framework in Frameworks */,
+				5FDF5C551789663B00F2DC8E /* CoreGraphics.framework in Frameworks */,
+				5FDF5C52178964DF00F2DC8E /* QuartzCore.framework in Frameworks */,
 				5F0830B7177C8EE100D01AE7 /* MessageUI.framework in Frameworks */,
 				7C8E938917731FFD00D99B37 /* UIKit.framework in Frameworks */,
 				7C8E938B17731FFD00D99B37 /* Foundation.framework in Frameworks */,
-				7C8E938D17731FFD00D99B37 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +156,7 @@
 		5F083051177C879100D01AE7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5FDF5C631789751800F2DC8E /* AppModel */,
 				5FE4BBD6178096A400036E09 /* NewsEntity.h */,
 				5FE4BBD7178096A400036E09 /* NewsEntity.m */,
 			);
@@ -183,6 +219,17 @@
 			children = (
 				5FE4BBD31780661500036E09 /* DataService.h */,
 				5FE4BBD41780661500036E09 /* DataService.m */,
+				5FDF5C5C1789731200F2DC8E /* DataSingleton.h */,
+				5FDF5C5D1789731200F2DC8E /* DataSingleton.m */,
+				5FDF5C47178962A400F2DC8E /* EGORefreshTableHeaderView.h */,
+				5FDF5C48178962A400F2DC8E /* EGORefreshTableHeaderView.m */,
+				5FDF5C49178962A400F2DC8E /* LoadingCell.h */,
+				5FDF5C4A178962A400F2DC8E /* LoadingCell.m */,
+				5FDF5C4B178962A400F2DC8E /* LoadingCell.xib */,
+				5FDF5C561789730800F2DC8E /* NdUncaughtExceptionHandler.h */,
+				5FDF5C571789730900F2DC8E /* NdUncaughtExceptionHandler.m */,
+				5FDF5C581789730900F2DC8E /* Tool.h */,
+				5FDF5C591789730900F2DC8E /* Tool.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -198,6 +245,24 @@
 				5F971D4D1788563C006C1F16 /* YejhdCell.xib */,
 			);
 			name = News;
+			sourceTree = "<group>";
+		};
+		5FDF5C5F178974AE00F2DC8E /* GCDiscreetNotificationView */ = {
+			isa = PBXGroup;
+			children = (
+				5FDF5C60178974AE00F2DC8E /* GCDiscreetNotificationView.h */,
+				5FDF5C61178974AE00F2DC8E /* GCDiscreetNotificationView.m */,
+			);
+			path = GCDiscreetNotificationView;
+			sourceTree = "<group>";
+		};
+		5FDF5C631789751800F2DC8E /* AppModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FDF5C641789751800F2DC8E /* ApiError.h */,
+				5FDF5C651789751800F2DC8E /* ApiError.m */,
+			);
+			path = AppModel;
 			sourceTree = "<group>";
 		};
 		7C8E937C17731FFC00D99B37 = {
@@ -220,6 +285,12 @@
 		7C8E938717731FFD00D99B37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5FDF5C6B1789786900F2DC8E /* AVFoundation.framework */,
+				5FDF5C691789785800F2DC8E /* MobileCoreServices.framework */,
+				5FDF5C671789782000F2DC8E /* AudioToolbox.framework */,
+				5FDF5C531789651C00F2DC8E /* SystemConfiguration.framework */,
+				5FDF5C51178964DF00F2DC8E /* QuartzCore.framework */,
+				5FDF5C4F178963D100F2DC8E /* CoreText.framework */,
 				5F0830B6177C8EE100D01AE7 /* MessageUI.framework */,
 				7C8E938817731FFD00D99B37 /* UIKit.framework */,
 				7C8E938A17731FFD00D99B37 /* Foundation.framework */,
@@ -231,6 +302,7 @@
 		7C8E938E17731FFD00D99B37 /* uih */ = {
 			isa = PBXGroup;
 			children = (
+				5FDF5C5F178974AE00F2DC8E /* GCDiscreetNotificationView */,
 				5F971D44178850BA006C1F16 /* News */,
 				5F0830B2177C887500D01AE7 /* Helper */,
 				5F0830A9177C884600D01AE7 /* SVWebViewController */,
@@ -318,6 +390,7 @@
 				5F0830B0177C884600D01AE7 /* SVWebViewController.bundle in Resources */,
 				5F971D4917885144006C1F16 /* Yejhd.xib in Resources */,
 				5F971D4E1788563C006C1F16 /* YejhdCell.xib in Resources */,
+				5FDF5C4E178962A400F2DC8E /* LoadingCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +415,13 @@
 				5FE4BBD8178096A400036E09 /* NewsEntity.m in Sources */,
 				5F971D4817885144006C1F16 /* Yejhd.m in Sources */,
 				5F971D4C178855E5006C1F16 /* YejhdCell.m in Sources */,
+				5FDF5C4C178962A400F2DC8E /* EGORefreshTableHeaderView.m in Sources */,
+				5FDF5C4D178962A400F2DC8E /* LoadingCell.m in Sources */,
+				5FDF5C5A1789730900F2DC8E /* NdUncaughtExceptionHandler.m in Sources */,
+				5FDF5C5B1789730900F2DC8E /* Tool.m in Sources */,
+				5FDF5C5E1789731200F2DC8E /* DataSingleton.m in Sources */,
+				5FDF5C62178974AE00F2DC8E /* GCDiscreetNotificationView.m in Sources */,
+				5FDF5C661789751800F2DC8E /* ApiError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

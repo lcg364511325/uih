@@ -10,7 +10,7 @@
 
 @implementation DataService
 
--(void)convseFromJson:(NSMutableDictionary*)dictionary
+-(id)convseFromJson:(NSMutableDictionary*)dictionary
 {
     NSError *error = nil;
     NSData *jsonData = [NSJSONSerialization
@@ -31,11 +31,14 @@
             if ([jsonObject isKindOfClass:[NSDictionary class]]){
                 NSDictionary *deserializedDictionary = (NSDictionary *)jsonObject;
                 NSLog(@"Dersialized JSON Dictionary = %@", deserializedDictionary);
+                return deserializedDictionary;
             }
             //如果jsonObject是数组类
             else if ([jsonObject isKindOfClass:[NSArray class]]){
                 NSArray *deserializedArray = (NSArray *)jsonObject;
                 NSLog(@"Dersialized JSON Array = %@", deserializedArray);
+                
+                return deserializedArray;
             } else {
                 NSLog(@"I can't deal with it");
             }
@@ -49,6 +52,8 @@
     else if (error != nil){
         NSLog(@"An error happened = %@", error);
     }
+    
+    return nil;
 }
 
 -(NSMutableArray*)GetNews_yejhd
@@ -59,7 +64,9 @@
     
     NSMutableDictionary * dict = [self GetDataService:URL forPage:1 forPageSize:PSize];
     
-    [self convseFromJson:dict];
+    NSArray *deserializedArray =[self convseFromJson:dict];
+    
+    //NSLog(@"GetNews_yejhd-----------------%@",deserializedArray);
     
     /*
     //总记录数
@@ -82,9 +89,9 @@
     NSError *error;
     
     if([URL rangeOfString:@"?"].length > 0)
-        URL = [NSString stringWithFormat:@"%@?page=%d&pagesize=%d",URL,Page,PageSize];
-    else
         URL = [NSString stringWithFormat:@"%@&page=%d&pagesize=%d",URL,Page,PageSize];
+    else
+        URL = [NSString stringWithFormat:@"%@?page=%d&pagesize=%d",URL,Page,PageSize];
     
     //加载一个NSURL对象
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:URL]];

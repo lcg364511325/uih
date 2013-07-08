@@ -12,6 +12,14 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 
+    //添加的预编译
+    #import "EGORefreshTableHeaderView.h"
+    #import "DataSingleton.h"
+    #import "MBProgressHUD.h"
+    #import "GCDiscreetNotificationView.h"
+    #import "NdUncaughtExceptionHandler.h"
+    #import "Tool.h"
+
     /*接口地址*/
     //域名
     #define domain  @"http://lcg364511325.xicp.net:9044/"
@@ -25,7 +33,13 @@
     //教育新信息
     #define api_news_jyxxx @"Application/nologininformation.ashx?action=loadInformation&ArticleType=1"
 
+    #define loadNext20Tip @"下面 20 项 . . ."
+    #define loadingTip @"正在加载 . . ."
+    #define networkError @"网络无连接"
+
     //页面行数
-    #define PSize 20
+    #define PSize @"10"
+
+    
 
 #endif

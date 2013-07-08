@@ -12,45 +12,44 @@
 
 -(id)convseFromJson:(NSMutableDictionary*)dictionary
 {
+    NSMutableArray * m = [[NSMutableArray alloc] initWithCapacity:20];
+    
+    NSString * URL = [NSString stringWithFormat:@"%@%@",domain,api_news_yejhd];
+    
+    NSMutableDictionary * dict = [self GetDataService:URL forPage:Page forPageSize:[PSize intValue]];
+    
     NSError *error = nil;
-    NSData *jsonData = [NSJSONSerialization
-                        dataWithJSONObject:dictionary options:NSJSONWritingPrettyPrinted error:&error];
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&error];
     
     if ([jsonData length] > 0 && error == nil){
-        NSLog(@"Successfully serialized the dictionary into data.");
-        /* Json转数组/字典 */
         error = nil;
-        //转换方法
-        id jsonObject = [NSJSONSerialization
-                         JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments
-                         error:&error];
+
+        id jsonObject = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];
         
         if (jsonObject != nil && error == nil){
-            NSLog(@"Successfully deserialized...");
-            //如果jsonObject是字典类
             if ([jsonObject isKindOfClass:[NSDictionary class]]){
                 NSDictionary *deserializedDictionary = (NSDictionary *)jsonObject;
                 NSLog(@"Dersialized JSON Dictionary = %@", deserializedDictionary);
                 return deserializedDictionary;
             }
-            //如果jsonObject是数组类
             else if ([jsonObject isKindOfClass:[NSArray class]]){
                 NSArray *deserializedArray = (NSArray *)jsonObject;
                 NSLog(@"Dersialized JSON Array = %@", deserializedArray);
                 
                 return deserializedArray;
             } else {
-                NSLog(@"I can't deal with it");
+                NSLog(@"无法解析的数据结构.");
             }
         }
         else if (error != nil){
-            NSLog(@"An error happened while deserializing the JSON data."); }
+            NSLog(@"%@",error);
+        }
     }
     else if ([jsonData length] == 0 &&error == nil){
-        NSLog(@"No data was returned after serialization.");
+        NSLog(@"空的数据集.");
     }
     else if (error != nil){
-        NSLog(@"An error happened = %@", error);
+        NSLog(@"发生致命错误：%@", error);
     }
     
     return nil;
@@ -84,6 +83,7 @@
     return nil;
 }
 
+
 -(NSMutableDictionary*)GetDataService:(NSString*) URL forPage:(int)Page forPageSize:(int)PageSize
 {
     NSError *error;
@@ -103,22 +103,4 @@
     return dict;
 }
 
-/*
-- (IBAction)btnPressIOS5Json:(id)sender {
-    
-    NSError *error;
-    //加载一个NSURL对象
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://m.weather.com.cn/data/101180601.html"]];
-    //将请求的url数据放到NSData对象中
-    NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-    //IOS5自带解析类NSJSONSerialization从response中解析出数据放到字典中
-    NSDictionary *weatherDic = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingMutableLeaves error:&error];
-    
-    NSDictionary *weatherInfo = [weatherDic objectForKey:@"weatherinfo"];
-    
-    txtView.text = [NSString stringWithFormat:@"今天是 %@  %@  %@  的天气状况是：%@  %@ ",[weatherInfo objectForKey:@"date_y"],[weatherInfo objectForKey:@"week"],[weatherInfo objectForKey:@"city"], [weatherInfo objectForKey:@"weather1"], [weatherInfo objectForKey:@"temp1"]];
-    
-    NSLog(@"weatherInfo字典里面的内容为--》%@", weatherDic );
-}
-*/
 @end

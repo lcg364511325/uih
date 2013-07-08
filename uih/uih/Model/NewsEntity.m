@@ -10,7 +10,6 @@
 
 @implementation NewsEntity
 
-@synthesize total;
 @synthesize peta_rn;
 @synthesize ID;
 @synthesize ArticleType;

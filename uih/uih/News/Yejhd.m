@@ -132,7 +132,7 @@
     }
     @finally {
         isLoading = NO;
-        //[self doneLoadingTableViewData];
+        [self doneLoadingTableViewData];
     }
     
 }

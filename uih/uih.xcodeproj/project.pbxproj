@@ -205,6 +205,8 @@
 		7CB5EB68178EBF6600281392 /* yachiimg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5EB17178EBF6600281392 /* yachiimg@2x.png */; };
 		7CB5EB69178EBF6600281392 /* yuanwangdel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5EB18178EBF6600281392 /* yuanwangdel@2x.png */; };
 		7CB5EB6A178EBF6600281392 /* zan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5EB19178EBF6600281392 /* zan@2x.png */; };
+		7CB5EB6E178ED05C00281392 /* NewsContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5EB6C178ED05C00281392 /* NewsContent.m */; };
+		7CB5EB6F178ED05C00281392 /* NewsContent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5EB6D178ED05C00281392 /* NewsContent.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -432,6 +434,9 @@
 		7CB5EB17178EBF6600281392 /* yachiimg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yachiimg@2x.png"; sourceTree = "<group>"; };
 		7CB5EB18178EBF6600281392 /* yuanwangdel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yuanwangdel@2x.png"; sourceTree = "<group>"; };
 		7CB5EB19178EBF6600281392 /* zan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zan@2x.png"; sourceTree = "<group>"; };
+		7CB5EB6B178ED05B00281392 /* NewsContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsContent.h; path = News/NewsContent.h; sourceTree = "<group>"; };
+		7CB5EB6C178ED05C00281392 /* NewsContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsContent.m; path = News/NewsContent.m; sourceTree = "<group>"; };
+		7CB5EB6D178ED05C00281392 /* NewsContent.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewsContent.xib; path = News/NewsContent.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -560,6 +565,9 @@
 				5F971D4A178855E5006C1F16 /* YejhdCell.h */,
 				5F971D4B178855E5006C1F16 /* YejhdCell.m */,
 				5F971D4D1788563C006C1F16 /* YejhdCell.xib */,
+				7CB5EB6B178ED05B00281392 /* NewsContent.h */,
+				7CB5EB6C178ED05C00281392 /* NewsContent.m */,
+				7CB5EB6D178ED05C00281392 /* NewsContent.xib */,
 			);
 			name = News;
 			sourceTree = "<group>";
@@ -1039,6 +1047,7 @@
 				7CB5EB68178EBF6600281392 /* yachiimg@2x.png in Resources */,
 				7CB5EB69178EBF6600281392 /* yuanwangdel@2x.png in Resources */,
 				7CB5EB6A178EBF6600281392 /* zan@2x.png in Resources */,
+				7CB5EB6F178ED05C00281392 /* NewsContent.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1070,6 +1079,7 @@
 				5FDF5C5E1789731200F2DC8E /* DataSingleton.m in Sources */,
 				5FDF5C62178974AE00F2DC8E /* GCDiscreetNotificationView.m in Sources */,
 				5FDF5C661789751800F2DC8E /* ApiError.m in Sources */,
+				7CB5EB6E178ED05C00281392 /* NewsContent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

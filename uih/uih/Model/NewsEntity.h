@@ -16,4 +16,9 @@
 @property (nonatomic, retain) NSString * ArticleTitle;
 @property (nonatomic, retain) NSString * OperatorDate;
 
+@property (nonatomic, retain) NSString * ArticleContent;
+@property (nonatomic, retain) NSString * OperatorName;
+@property (nonatomic, retain) NSString * IsHot;
+@property (nonatomic, retain) NSString * ReadCount;
+
 @end

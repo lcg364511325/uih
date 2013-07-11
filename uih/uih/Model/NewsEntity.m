@@ -16,4 +16,10 @@
 @synthesize ArticleTitle;
 @synthesize OperatorDate;
 
+@synthesize ArticleContent;
+@synthesize OperatorName;
+@synthesize IsHot;
+@synthesize ReadCount;
+
+
 @end

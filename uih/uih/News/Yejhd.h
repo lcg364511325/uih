@@ -23,6 +23,8 @@
     //下拉刷新
     EGORefreshTableHeaderView *_refreshHeaderView;
     BOOL _reloading;
+    
+    
 }
 
 @property (strong, nonatomic) IBOutlet UITableView * tableLists;
@@ -36,5 +38,7 @@
 -(void)reloadTableViewDataSource;
 
 -(void)doneLoadingTableViewData;
+
+-(IBAction)onclickNewsType:(id)sender;
 
 @end

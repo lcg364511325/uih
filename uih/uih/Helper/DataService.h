@@ -12,6 +12,6 @@
 @interface DataService : NSObject
 
 
--(NSMutableArray*)GetNews_yejhd:(int)Page;
+-(NSMutableArray*)GetNews_yejhd:(int)Page typeid:(int)typeid;
 
 @end

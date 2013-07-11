@@ -14,6 +14,7 @@
 
 @implementation Yejhd
 @synthesize tableLists;
+static int typeid=1;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -48,7 +49,7 @@
 - (void)myInit
 {
     //设置标题
-    self.title = @"";
+    self.title = @"育儿宝典";
     
     //设置导航栏底图
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navbg"] forBarMetrics:UIBarMetricsDefault];
@@ -58,7 +59,7 @@
     CGRect frame_1= CGRectMake(0, 0, image.size.width, image.size.height);
     UIButton* btnBack= [[UIButton alloc] initWithFrame:frame_1];
     [btnBack setBackgroundImage:image forState:UIControlStateNormal];
-    [btnBack setTitle:@"" forState:UIControlStateNormal];
+    [btnBack setTitle:@"返回" forState:UIControlStateNormal];
     [btnBack setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     btnBack.titleLabel.font=[UIFont systemFontOfSize:16];
     [btnBack addTarget:self action:@selector(back:) forControlEvents:UIControlEventTouchUpInside];
@@ -68,11 +69,11 @@
     self.navigationItem.leftBarButtonItem = BarButtonItem;
     
     //定制导航栏右按钮
-    image= [UIImage imageNamed:@"qian_icon"];
+    image= [UIImage imageNamed:@"users"];
     frame_1= CGRectMake(0, 0, image.size.width, image.size.height);
     UIButton* btnHome= [[UIButton alloc] initWithFrame:frame_1];
     [btnHome setBackgroundImage:image forState:UIControlStateNormal];
-    [btnHome setTitle:@"" forState:UIControlStateNormal];
+    [btnHome setTitle:@"登录" forState:UIControlStateNormal];
     [btnHome setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     btnHome.titleLabel.font=[UIFont systemFontOfSize:16];
     [btnHome addTarget:self action:@selector(home:) forControlEvents:UIControlEventTouchUpInside];
@@ -114,7 +115,7 @@
     @try {
         DataService * ds = [[DataService alloc] init];
     
-        NSMutableArray * newLists = [ds GetNews_yejhd:Page];
+        NSMutableArray * newLists = [ds GetNews_yejhd:Page typeid:typeid];
     
         if (newLists.count < 1) {
             isLoadOver = YES;
@@ -133,6 +134,34 @@
     @finally {
         isLoading = NO;
         [self doneLoadingTableViewData];
+    }
+    
+}
+
+
+-(IBAction)onclickNewsType:(id)sender{
+    
+    UIButton *button = (UIButton *)sender;  //参数id是一个通用内型，此处将其强制转换成UIButton内型
+    //每个button都有唯一的tag，系统默认陪标示用的，是一个整数
+    //NSString *title =[NSString stringWithFormat:@"Button tag %d",[button tag]];//将button tag 转换成字符串输出
+    NSString *mesage = [button currentTitle];     //取得button名称
+    NSLog(@"--------------:%@",mesage);
+    
+    [self clear];
+    
+    if ([mesage hasPrefix:@"养儿冏好大"]) {
+        typeid=5;
+        [self reload:YES];
+    }else if ([mesage hasPrefix:@"育儿好望角"]){
+        typeid=4;
+        [self reload:YES];
+    }else if ([mesage hasPrefix:@"特色教学"]){
+        typeid=2;
+        [self reload:YES];
+    }else {
+        typeid=1;
+        [self reload:YES];
+    
     }
     
 }

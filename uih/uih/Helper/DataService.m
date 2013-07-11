@@ -11,11 +11,24 @@
 @implementation DataService
 
 
--(NSMutableArray*)GetNews_yejhd:(int)Page
+-(NSMutableArray*)GetNews_yejhd:(int)Page typeid:(int)typeid
 {
     NSMutableArray * m = [[NSMutableArray alloc] initWithCapacity:20];
     
-    NSString * URL = [NSString stringWithFormat:@"%@%@",domain,api_news_yejhd];
+    NSString *urlps=api_news_yejhd;
+    
+    if (typeid==1) {
+        urlps=api_news_jyxxx;
+    }else if (typeid==2){
+        urlps=api_news_tsjx;
+    }else if (typeid==4){
+        urlps=api_news_yehwj;
+    }else if (typeid==5){
+        urlps=api_news_yejhd;
+    }
+    
+    
+    NSString * URL = [NSString stringWithFormat:@"%@%@",domain,urlps];
     
     NSMutableDictionary * dict = [self GetDataService:URL forPage:Page forPageSize:[PSize intValue]];
     

@@ -17,6 +17,14 @@
 		5F0830B1177C884600D01AE7 /* SVWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0830AE177C884600D01AE7 /* SVWebViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5F0830B5177C8B2200D01AE7 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0830B4177C8B2200D01AE7 /* MBProgressHUD.m */; };
 		5F0830B7177C8EE100D01AE7 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0830B6177C8EE100D01AE7 /* MessageUI.framework */; };
+		5F5D77211792F099002CA766 /* LoginEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5D77201792F098002CA766 /* LoginEntity.m */; };
+		5F5D77241792F1D1002CA766 /* ProfileEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5D77231792F1D1002CA766 /* ProfileEntity.m */; };
+		5F5D77271792F30F002CA766 /* ContactEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5D77261792F30F002CA766 /* ContactEntity.m */; };
+		5F5D772A1792F402002CA766 /* DesireEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5D77291792F402002CA766 /* DesireEntity.m */; };
+		5F5D772D1792F50A002CA766 /* GalleryEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5D772C1792F50A002CA766 /* GalleryEntity.m */; };
+		5F5D77301792F58D002CA766 /* PhotoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5D772F1792F58D002CA766 /* PhotoEntity.m */; };
+		5F5D77331792F63E002CA766 /* CommentEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5D77321792F63E002CA766 /* CommentEntity.m */; };
+		5F5D77361792F719002CA766 /* VideoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5D77351792F719002CA766 /* VideoEntity.m */; };
 		5F971D4817885144006C1F16 /* Yejhd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F971D4617885144006C1F16 /* Yejhd.m */; };
 		5F971D4917885144006C1F16 /* Yejhd.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F971D4717885144006C1F16 /* Yejhd.xib */; };
 		5F971D4C178855E5006C1F16 /* YejhdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F971D4B178855E5006C1F16 /* YejhdCell.m */; };
@@ -228,6 +236,22 @@
 		5F0830B3177C8B2200D01AE7 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		5F0830B4177C8B2200D01AE7 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		5F0830B6177C8EE100D01AE7 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		5F5D771F1792F098002CA766 /* LoginEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginEntity.h; sourceTree = "<group>"; };
+		5F5D77201792F098002CA766 /* LoginEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginEntity.m; sourceTree = "<group>"; };
+		5F5D77221792F1D1002CA766 /* ProfileEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileEntity.h; sourceTree = "<group>"; };
+		5F5D77231792F1D1002CA766 /* ProfileEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileEntity.m; sourceTree = "<group>"; };
+		5F5D77251792F30F002CA766 /* ContactEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactEntity.h; sourceTree = "<group>"; };
+		5F5D77261792F30F002CA766 /* ContactEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactEntity.m; sourceTree = "<group>"; };
+		5F5D77281792F402002CA766 /* DesireEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesireEntity.h; sourceTree = "<group>"; };
+		5F5D77291792F402002CA766 /* DesireEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesireEntity.m; sourceTree = "<group>"; };
+		5F5D772B1792F509002CA766 /* GalleryEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryEntity.h; sourceTree = "<group>"; };
+		5F5D772C1792F50A002CA766 /* GalleryEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryEntity.m; sourceTree = "<group>"; };
+		5F5D772E1792F58D002CA766 /* PhotoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoEntity.h; sourceTree = "<group>"; };
+		5F5D772F1792F58D002CA766 /* PhotoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoEntity.m; sourceTree = "<group>"; };
+		5F5D77311792F63E002CA766 /* CommentEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentEntity.h; sourceTree = "<group>"; };
+		5F5D77321792F63E002CA766 /* CommentEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentEntity.m; sourceTree = "<group>"; };
+		5F5D77341792F719002CA766 /* VideoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoEntity.h; sourceTree = "<group>"; };
+		5F5D77351792F719002CA766 /* VideoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoEntity.m; sourceTree = "<group>"; };
 		5F971D4517885144006C1F16 /* Yejhd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Yejhd.h; path = News/Yejhd.h; sourceTree = "<group>"; };
 		5F971D4617885144006C1F16 /* Yejhd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Yejhd.m; path = News/Yejhd.m; sourceTree = "<group>"; };
 		5F971D4717885144006C1F16 /* Yejhd.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Yejhd.xib; path = News/Yejhd.xib; sourceTree = "<group>"; };
@@ -481,6 +505,22 @@
 				5FDF5C631789751800F2DC8E /* AppModel */,
 				5FE4BBD6178096A400036E09 /* NewsEntity.h */,
 				5FE4BBD7178096A400036E09 /* NewsEntity.m */,
+				5F5D771F1792F098002CA766 /* LoginEntity.h */,
+				5F5D77201792F098002CA766 /* LoginEntity.m */,
+				5F5D77221792F1D1002CA766 /* ProfileEntity.h */,
+				5F5D77231792F1D1002CA766 /* ProfileEntity.m */,
+				5F5D77251792F30F002CA766 /* ContactEntity.h */,
+				5F5D77261792F30F002CA766 /* ContactEntity.m */,
+				5F5D77281792F402002CA766 /* DesireEntity.h */,
+				5F5D77291792F402002CA766 /* DesireEntity.m */,
+				5F5D772B1792F509002CA766 /* GalleryEntity.h */,
+				5F5D772C1792F50A002CA766 /* GalleryEntity.m */,
+				5F5D772E1792F58D002CA766 /* PhotoEntity.h */,
+				5F5D772F1792F58D002CA766 /* PhotoEntity.m */,
+				5F5D77311792F63E002CA766 /* CommentEntity.h */,
+				5F5D77321792F63E002CA766 /* CommentEntity.m */,
+				5F5D77341792F719002CA766 /* VideoEntity.h */,
+				5F5D77351792F719002CA766 /* VideoEntity.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1080,6 +1120,14 @@
 				5FDF5C62178974AE00F2DC8E /* GCDiscreetNotificationView.m in Sources */,
 				5FDF5C661789751800F2DC8E /* ApiError.m in Sources */,
 				7CB5EB6E178ED05C00281392 /* NewsContent.m in Sources */,
+				5F5D77211792F099002CA766 /* LoginEntity.m in Sources */,
+				5F5D77241792F1D1002CA766 /* ProfileEntity.m in Sources */,
+				5F5D77271792F30F002CA766 /* ContactEntity.m in Sources */,
+				5F5D772A1792F402002CA766 /* DesireEntity.m in Sources */,
+				5F5D772D1792F50A002CA766 /* GalleryEntity.m in Sources */,
+				5F5D77301792F58D002CA766 /* PhotoEntity.m in Sources */,
+				5F5D77331792F63E002CA766 /* CommentEntity.m in Sources */,
+				5F5D77361792F719002CA766 /* VideoEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

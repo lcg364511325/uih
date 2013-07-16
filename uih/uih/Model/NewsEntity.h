@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+//未登录发布新闻
 @interface NewsEntity : NSObject
 
 @property (nonatomic, retain) NSString * peta_rn;

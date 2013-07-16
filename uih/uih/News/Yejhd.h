@@ -17,6 +17,7 @@
 @interface Yejhd : UIViewController<UITableViewDelegate,UITableViewDataSource,MBProgressHUDDelegate, UITabBarControllerDelegate,UIAlertViewDelegate>
 {
     NSMutableArray * lists;
+    NSMutableArray * newLists;
     BOOL isLoading;
     BOOL isLoadOver;
     int Page;

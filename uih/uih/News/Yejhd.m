@@ -113,20 +113,28 @@ static int typeid=1;
     isLoading = YES;
     
     @try {
-        DataService * ds = [[DataService alloc] init];
-    
-        NSMutableArray * newLists = [ds GetNews_yejhd:Page typeid:typeid];
-    
-        if (newLists.count < 1) {
-            isLoadOver = YES;
-        }
-        isLoading = NO;
-        if (!noRefresh) {
-            [self clear];
-        }
-        [lists addObjectsFromArray:newLists];
-        [self.tableLists reloadData];
-        //[self doneLoadingTableViewData];
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            // 耗时的操作
+            DataService * ds = [[DataService alloc] init];
+            
+            newLists = [ds GetNews_yejhd:Page typeid:typeid];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                // 更新界面
+                isLoading = NO;
+                
+                if (newLists.count < 1) {
+                    isLoadOver = YES;
+                }
+                
+                if (!noRefresh) {
+                    [self clear];
+                }
+                [lists addObjectsFromArray:newLists];
+                [self.tableLists reloadData];
+                //[self doneLoadingTableViewData];
+            });
+        });
     }
     @catch (NSException *exception) {
         [NdUncaughtExceptionHandler TakeException:exception];
@@ -136,6 +144,8 @@ static int typeid=1;
         [self doneLoadingTableViewData];
     }
     
+    isLoading = YES;
+    [self.tableLists reloadData];
 }
 
 

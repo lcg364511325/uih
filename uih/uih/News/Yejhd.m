@@ -239,11 +239,13 @@ static int typeid=1;
         NewsEntity *n = [lists objectAtIndex:row];
         if (n)
         {
-            //NewsDetail *nDetail = [[NewsDetail alloc] init];
-            //nDetail.newsID = n._id;
+            NewsContent *nDetail = [[NewsContent alloc] init];
+        
+            //NewsContent *nDetail = [[NewsContent alloc] init];
+            nDetail.newid = n.ID;
             //nDetail.isNextPage = NO;
                 
-            //[self.navigationController pushViewController:nDetail animated:NO];
+            [self.navigationController pushViewController:nDetail animated:NO];
 
         }
     }

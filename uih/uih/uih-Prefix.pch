@@ -22,7 +22,7 @@
 
     /*接口地址*/
     //域名
-    #define domain  @"http://lcg364511325.xicp.net:9044/"
+    #define domain  @"http://192.168.1.105:9044/"
 
     //养儿囧好大
     #define api_news_yejhd @"Application/nologininformation.ashx?action=loadInformation&ArticleType=5"
@@ -33,7 +33,7 @@
     //教育新信息
     #define api_news_jyxxx @"Application/nologininformation.ashx?action=loadInformation&ArticleType=1"
     //信息内容
-    #define api_news_content @"Application/noLoginInformation.ashx?Action=loadContext";
+    #define api_news_content @"Application/noLoginInformation.ashx?Action=loadContext"
 
     #define loadNext20Tip @"下面 20 项 . . ."
     #define loadingTip @"正在加载 . . ."

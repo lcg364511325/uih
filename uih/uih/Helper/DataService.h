@@ -14,4 +14,6 @@
 
 -(NSMutableArray*)GetNews_yejhd:(int)Page typeid:(int)typeid;
 
+-(NewsEntity*)GetNews_content:(NSString *)newid;
+
 @end

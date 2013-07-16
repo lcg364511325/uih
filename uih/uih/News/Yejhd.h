@@ -12,6 +12,7 @@
 #import "DataService.h"
 #import "YejhdCell.h"
 #import "NewsEntity.h"
+#import "NewsContent.h"
 
 @interface Yejhd : UIViewController<UITableViewDelegate,UITableViewDataSource,MBProgressHUDDelegate, UITabBarControllerDelegate,UIAlertViewDelegate>
 {

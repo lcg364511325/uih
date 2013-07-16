@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataService.h"
+#import "NewsEntity.h"
 
-@interface NewsContent : UIViewController
+@interface NewsContent : UIViewController{
 
+}
 
+@property(retain , nonatomic) NSString * newid;
+
+@property (nonatomic , strong) IBOutlet UILabel * newsTitle;
+@property (nonatomic , strong) IBOutlet UILabel * newsTime;
+@property (nonatomic , strong) IBOutlet UITextView * newsContent;
 
 @end

@@ -80,6 +80,59 @@
     return m;
 }
 
+-(NewsEntity *)GetNews_content:(NSString *)newid
+{
+    
+    NSString * surl = [NSString stringWithFormat:@"%@&ID=%@",api_news_content,newid];
+    
+    
+    NSString * URL = [NSString stringWithFormat:@"%@%@",domain,surl];
+    
+    NSMutableDictionary * dict = [self GetDataService:URL forPage:1 forPageSize:[PSize intValue]];
+    
+    NSError *error = nil;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&error];
+    
+    if ([jsonData length] > 0 && error == nil){
+        error = nil;
+        
+        id jsonObject = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];
+        
+        if (jsonObject != nil && error == nil){
+            if ([jsonObject isKindOfClass:[NSDictionary class]]){
+                NSDictionary *d = (NSDictionary *)jsonObject;
+                //单个对象
+                NewsEntity * n = [[NewsEntity alloc] init];
+                n.peta_rn = [d objectForKey:@"peta_rn"];
+                n.ID = [d objectForKey:@"ID"];
+                n.ArticleTitle = [d objectForKey:@"ArticleTitle"];
+                n.ArticleType = [d objectForKey:@"ArticleType"];
+                n.OperatorDate = [d objectForKey:@"OperatorDate"];
+                
+                n.ArticleContent = [d objectForKey:@"ArticleContent"];
+                n.ReadCount = [d objectForKey:@"ReadCount"];
+                n.IsHot = [d objectForKey:@"IsHot"];
+                
+                return n;
+            }
+            else {
+                NSLog(@"无法解析的数据结构.");
+            }
+        }
+        else if (error != nil){
+            NSLog(@"%@",error);
+        }
+    }
+    else if ([jsonData length] == 0 &&error == nil){
+        NSLog(@"空的数据集.");
+    }
+    else if (error != nil){
+        NSLog(@"发生致命错误：%@", error);
+    }
+    
+    return nil;
+}
+
 
 -(NSMutableDictionary*)GetDataService:(NSString*) URL forPage:(int)Page forPageSize:(int)PageSize
 {

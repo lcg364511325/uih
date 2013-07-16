@@ -18,6 +18,8 @@
 
 @property (nonatomic , strong) IBOutlet UILabel * newsTitle;
 @property (nonatomic , strong) IBOutlet UILabel * newsTime;
-@property (nonatomic , strong) IBOutlet UITextView * newsContent;
+@property (nonatomic , strong) IBOutlet UIWebView * newsContent;
+
+
 
 @end

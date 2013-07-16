@@ -13,8 +13,9 @@
 #import "YejhdCell.h"
 #import "NewsEntity.h"
 #import "NewsContent.h"
+#import "YGPSegmentedController.h"
 
-@interface Yejhd : UIViewController<UITableViewDelegate,UITableViewDataSource,MBProgressHUDDelegate, UITabBarControllerDelegate,UIAlertViewDelegate>
+@interface Yejhd : UIViewController<UITableViewDelegate,UITableViewDataSource,MBProgressHUDDelegate, UITabBarControllerDelegate,UIAlertViewDelegate,YGPSegmentedControllerDelegate>
 {
     NSMutableArray * lists;
     NSMutableArray * newLists;
@@ -41,6 +42,5 @@
 
 -(void)doneLoadingTableViewData;
 
--(IBAction)onclickNewsType:(id)sender;
 
 @end

@@ -55,5 +55,9 @@
 
 + (NSDate *)NSStringDateToNSDate:(NSString *)string;
 
++ (UIColor *)colorFromHexRGB:(NSString *)inColorString;
+
++ (UIImage *) headbg;
+
 
 @end

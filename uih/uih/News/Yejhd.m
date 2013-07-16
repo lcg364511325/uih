@@ -7,9 +7,13 @@
 //
 
 #import "Yejhd.h"
+#import "YGPSegmentedController.h"
 
 @interface Yejhd ()
-
+{
+    YGPSegmentedController * _ygp;
+    
+}
 @end
 
 @implementation Yejhd
@@ -52,7 +56,9 @@ static int typeid=1;
     self.title = @"育儿宝典";
     
     //设置导航栏底图
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navbg"] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBackgroundImage:[Tool headbg] forBarMetrics:UIBarMetricsDefault];
+    [self.view setBackgroundColor:[Tool getBackgroundColor]];
+    [self.tableLists setBackgroundColor:[Tool getBackgroundColor]];
     
     //定制导航栏左按钮
     UIImage* image= [UIImage imageNamed:@"return"];
@@ -62,7 +68,7 @@ static int typeid=1;
     [btnBack setTitle:@"返回" forState:UIControlStateNormal];
     [btnBack setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     btnBack.titleLabel.font=[UIFont systemFontOfSize:16];
-    [btnBack addTarget:self action:@selector(back:) forControlEvents:UIControlEventTouchUpInside];
+    [btnBack addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
     
     
     UIBarButtonItem * BarButtonItem= [[UIBarButtonItem alloc] initWithCustomView:btnBack];
@@ -76,11 +82,26 @@ static int typeid=1;
     [btnHome setTitle:@"登录" forState:UIControlStateNormal];
     [btnHome setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     btnHome.titleLabel.font=[UIFont systemFontOfSize:16];
-    [btnHome addTarget:self action:@selector(home:) forControlEvents:UIControlEventTouchUpInside];
+    [btnHome addTarget:self action:@selector(home) forControlEvents:UIControlEventTouchUpInside];
     
     BarButtonItem= [[UIBarButtonItem alloc] initWithCustomView:btnHome];
     self.navigationItem.rightBarButtonItem = BarButtonItem;
 
+    
+    //初始化数据
+    NSArray * TitielArray = [NSArray arrayWithObjects:@"养儿冏好大", @"育儿好望角", @"特色教学", @"教育信息", nil];
+
+    /*
+     第一个参数是存放你需要显示的title
+     第二个是设置你需要的size
+     */
+    _ygp = [[YGPSegmentedController alloc]initContentTitle:TitielArray buttonwidth:80 CGRect:CGRectMake(0, 0, 320, 44)];
+    
+    [_ygp setDelegate:self];
+    
+    [self.view addSubview:_ygp];
+    
+    
     Page = 1;
 }
 
@@ -92,6 +113,7 @@ static int typeid=1;
 
 - (void)home
 {
+    
     
 }
 
@@ -149,32 +171,41 @@ static int typeid=1;
 }
 
 
--(IBAction)onclickNewsType:(id)sender{
-    
-    UIButton *button = (UIButton *)sender;  //参数id是一个通用内型，此处将其强制转换成UIButton内型
-    //每个button都有唯一的tag，系统默认陪标示用的，是一个整数
-    //NSString *title =[NSString stringWithFormat:@"Button tag %d",[button tag]];//将button tag 转换成字符串输出
-    NSString *mesage = [button currentTitle];     //取得button名称
-    NSLog(@"--------------:%@",mesage);
-    
-    [self clear];
-    
-    if ([mesage hasPrefix:@"养儿冏好大"]) {
-        typeid=5;
-        [self reload:YES];
-    }else if ([mesage hasPrefix:@"育儿好望角"]){
-        typeid=4;
-        [self reload:YES];
-    }else if ([mesage hasPrefix:@"特色教学"]){
-        typeid=2;
-        [self reload:YES];
-    }else {
-        typeid=1;
-        [self reload:YES];
-    
+-(void)segmentedViewController:(YGPSegmentedController *)segmentedControl touchedAtIndex:(NSUInteger)index
+{
+    if (segmentedControl == _ygp) {
+        NSLog(@"segmentedControl.index :%d",index);
+        [self clear];
+        
+        switch (index) {
+            case 0:
+                typeid=5;
+                [self reload:YES];
+                break;
+            case 1:
+                typeid=4;
+                [self reload:YES];
+                break;
+            case 2:
+                typeid=2;
+                [self reload:YES];
+                break;
+            case 3:
+                typeid=1;
+                [self reload:YES];
+                break;
+            default:
+                break;
+        }
     }
+
+    NSString * string = [NSString stringWithFormat:@"%d",index];
+
+    NSLog(@"%@",string);
+
     
 }
+
 
 - (void)doneManualRefresh
 {
@@ -209,6 +240,7 @@ static int typeid=1;
         {
                 YejhdCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
                 if (!cell) {
+                    [cell setBackgroundColor:[Tool getCellBackgroundColor]];
                     NSArray *objects = [[NSBundle mainBundle] loadNibNamed:@"YejhdCell" owner:self options:nil];
                     for (NSObject *o in objects) {
                         if ([o isKindOfClass:[YejhdCell class]]) {

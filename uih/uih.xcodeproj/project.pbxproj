@@ -733,6 +733,18 @@
 		7C8E938E17731FFD00D99B37 /* uih */ = {
 			isa = PBXGroup;
 			children = (
+				7CF6DC4F1798077400FFB22E /* helpCenter */,
+				7CF6DC4E1798075F00FFB22E /* myBox */,
+				7CF6DC4D1798074900FFB22E /* recharge */,
+				7CF6DC4C1798072900FFB22E /* myClass */,
+				7CF6DC4B1798070C00FFB22E /* health */,
+				7CF6DC4A179806F200FFB22E /* campusActivities */,
+				7CF6DC49179806DD00FFB22E /* notice */,
+				7CF6DC48179806C600FFB22E /* learning */,
+				7CF6DC47179806A500FFB22E /* activity */,
+				7CF6DC461798068A00FFB22E /* audioVideo */,
+				7CF6DC451798065F00FFB22E /* moments */,
+				7CF6DC44179805EF00FFB22E /* desire */,
 				7CF3FF321796BBB90010DDE7 /* ImageCacher */,
 				7CF3FF2A179694D30010DDE7 /* myInformation */,
 				7CF3FF241796747D0010DDE7 /* login */,
@@ -980,6 +992,90 @@
 				7CF3FF361796BBFA0010DDE7 /* ImageCacher.m */,
 			);
 			path = ImageCacher;
+			sourceTree = "<group>";
+		};
+		7CF6DC44179805EF00FFB22E /* desire */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = desire;
+			sourceTree = "<group>";
+		};
+		7CF6DC451798065F00FFB22E /* moments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = moments;
+			sourceTree = "<group>";
+		};
+		7CF6DC461798068A00FFB22E /* audioVideo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = audioVideo;
+			sourceTree = "<group>";
+		};
+		7CF6DC47179806A500FFB22E /* activity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = activity;
+			sourceTree = "<group>";
+		};
+		7CF6DC48179806C600FFB22E /* learning */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = learning;
+			sourceTree = "<group>";
+		};
+		7CF6DC49179806DD00FFB22E /* notice */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = notice;
+			sourceTree = "<group>";
+		};
+		7CF6DC4A179806F200FFB22E /* campusActivities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = campusActivities;
+			sourceTree = "<group>";
+		};
+		7CF6DC4B1798070C00FFB22E /* health */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = health;
+			sourceTree = "<group>";
+		};
+		7CF6DC4C1798072900FFB22E /* myClass */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = myClass;
+			sourceTree = "<group>";
+		};
+		7CF6DC4D1798074900FFB22E /* recharge */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = recharge;
+			sourceTree = "<group>";
+		};
+		7CF6DC4E1798075F00FFB22E /* myBox */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = myBox;
+			sourceTree = "<group>";
+		};
+		7CF6DC4F1798077400FFB22E /* helpCenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = helpCenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -24,4 +24,6 @@
 @synthesize PersonCode;
 @synthesize JoinDate;
 @synthesize UserDescribe;
+@synthesize Constellation;
+@synthesize contactInfo;
 @end

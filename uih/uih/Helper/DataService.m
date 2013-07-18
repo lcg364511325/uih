@@ -133,6 +133,191 @@
     return nil;
 }
 
+//登录接口
+-(LoginEntity *)login:(NSString *)username password:(NSString *)password verlity:(NSString*)verlity
+{
+    
+    NSString * surl = [NSString stringWithFormat:@"Application/checkLogin.ashx?Action=checklogin&UserName=%@&UserPWD=%@&Lcode=%@",username,password,verlity];
+    
+    
+    NSString * URL = [NSString stringWithFormat:@"%@%@",domain,surl];
+    
+    NSMutableDictionary * dict = [self GetDataService:URL forPage:1 forPageSize:[PSize intValue]];
+    
+    NSError *error = nil;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&error];
+    
+    if ([jsonData length] > 0 && error == nil){
+        error = nil;
+        
+        id jsonObject = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];
+        
+        if (jsonObject != nil && error == nil){
+            if ([jsonObject isKindOfClass:[NSDictionary class]]){
+                NSDictionary *d = (NSDictionary *)jsonObject;
+                //单个对象
+                LoginEntity * n = [[LoginEntity alloc] init];
+                n.result = [[d objectForKey:@"result"] stringValue];
+                n.info = [d objectForKey:@"info"];
+                n.webcode = [d objectForKey:@"webcode"];
+                
+                return n;
+            }
+            else {
+                NSLog(@"无法解析的数据结构.");
+            }
+        }
+        else if (error != nil){
+            NSLog(@"%@",error);
+        }
+    }
+    else if ([jsonData length] == 0 &&error == nil){
+        NSLog(@"空的数据集.");
+    }
+    else if (error != nil){
+        NSLog(@"发生致命错误：%@", error);
+    }
+    
+    return nil;
+}
+
+//查询个人资料
+-(ProfileEntity *)schoolPersonnel:(NSString *)username
+{
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    
+    NSString * surl = [NSString stringWithFormat:@"Application/myInformation.ashx?Action=schoolPersonnel&UserName=%@&webcode=%@",username,myDelegate.webcode];
+    
+    
+    NSString * URL = [NSString stringWithFormat:@"%@%@",domain,surl];
+    
+    NSMutableDictionary * dict = [self GetDataService:URL forPage:1 forPageSize:[PSize intValue]];
+    
+    NSError *error = nil;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&error];
+    
+    if ([jsonData length] > 0 && error == nil){
+        error = nil;
+        
+        id jsonObject = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];
+        
+        if (jsonObject != nil && error == nil){
+            if ([jsonObject isKindOfClass:[NSDictionary class]]){
+                NSDictionary *dd = (NSDictionary *)jsonObject;
+                
+                NSDictionary *d = (NSDictionary *)[dd objectForKey:@"userInfo"];
+                
+                //单个对象
+                ProfileEntity * n = [[ProfileEntity alloc] init];
+                n.ID = [d objectForKey:@"ID"];
+                n.RealName = [d objectForKey:@"RealName"];
+                n.PetName = [d objectForKey:@"PetName"];
+                n.Birthday = [d objectForKey:@"Birthday"];
+                
+                n.Sexual = [d objectForKey:@"Sexual"];
+                n.BloodType = [d objectForKey:@"BloodType"];
+                n.Telphone = [d objectForKey:@"Telphone"];
+                
+                n.Address = [d objectForKey:@"Address"];
+                n.Email = [d objectForKey:@"Email"];
+                n.HomeTel = [d objectForKey:@"HomeTel"];
+                n.PortraitPath = [d objectForKey:@"PortraitPath"];
+                n.PersonCode = [d objectForKey:@"PersonCode"];
+                n.JoinDate = [d objectForKey:@"JoinDate"];
+                n.UserDescribe = [d objectForKey:@"UserDescribe"];
+                n.Constellation = [d objectForKey:@"Constellation"];
+                
+                n.contactInfo = [dd objectForKey:@"contactInfo"];
+                
+                return n;
+            }
+            else {
+                NSLog(@"无法解析的数据结构.");
+            }
+        }
+        else if (error != nil){
+            NSLog(@"%@",error);
+        }
+    }
+    else if ([jsonData length] == 0 &&error == nil){
+        NSLog(@"空的数据集.");
+    }
+    else if (error != nil){
+        NSLog(@"发生致命错误：%@", error);
+    }
+    
+    return nil;
+}
+
+
+//查询个人资料
+-(DesireEntity *)newDesire:(NSString *)username
+{
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    
+    NSString * surl = [NSString stringWithFormat:@"Application/myDesire.ashx?Action=newDesire&UserName=%@&webcode=%@",username,myDelegate.webcode];
+    
+    
+    NSString * URL = [NSString stringWithFormat:@"%@%@",domain,surl];
+    
+    NSMutableDictionary * dict = [self GetDataService:URL forPage:1 forPageSize:[PSize intValue]];
+    
+    NSError *error = nil;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&error];
+    
+    if ([jsonData length] > 0 && error == nil){
+        error = nil;
+        
+        id jsonObject = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];
+        
+        if (jsonObject != nil && error == nil){
+            if ([jsonObject isKindOfClass:[NSDictionary class]]){
+                NSDictionary *d = (NSDictionary *)jsonObject;
+                //单个对象
+                DesireEntity * n = [[DesireEntity alloc] init];
+                n.ID = [d objectForKey:@"ID"];
+                n.DesireContent = [d objectForKey:@"DesireContent"];
+                n.ReleaseDate = [d objectForKey:@"ReleaseDate"];
+                n.PraiseNumber = [d objectForKey:@"PraiseNumber"];
+                
+                return n;
+            }
+            else {
+                NSLog(@"无法解析的数据结构.");
+            }
+        }
+        else if (error != nil){
+            NSLog(@"%@",error);
+        }
+    }
+    else if ([jsonData length] == 0 &&error == nil){
+        NSLog(@"空的数据集.");
+    }
+    else if (error != nil){
+        NSLog(@"发生致命错误：%@", error);
+    }
+    
+    return nil;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 -(NSMutableDictionary*)GetDataService:(NSString*) URL forPage:(int)Page forPageSize:(int)PageSize
 {

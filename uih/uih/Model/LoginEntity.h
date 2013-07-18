@@ -12,5 +12,5 @@
 @interface LoginEntity : NSObject
 @property (nonatomic, retain) NSString * result;
 @property (nonatomic, retain) NSString * info;
-@property (nonatomic, retain) NSString * webconde;
+@property (nonatomic, retain) NSString * webcode;
 @end

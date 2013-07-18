@@ -24,4 +24,6 @@
 @property (nonatomic, retain) NSString * PersonCode;
 @property (nonatomic, retain) NSString * JoinDate;
 @property (nonatomic, retain) NSString * UserDescribe;
+@property (nonatomic, retain) NSString * Constellation;
+@property (nonatomic, retain) id  contactInfo;
 @end

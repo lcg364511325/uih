@@ -10,6 +10,9 @@
 
 @implementation AppDelegate
 
+@synthesize webcode;
+@synthesize username;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //显示系统托盘
@@ -17,6 +20,12 @@
     
     //初始化
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    //首次打开APP 创建缓存文件夹
+    if ([[NSUserDefaults standardUserDefaults]objectForKey:@"firstLaunch"]==nil) {
+        [[NSFileManager defaultManager] createDirectoryAtPath:pathInCacheDirectory(@"com.xmly") withIntermediateDirectories:YES attributes:nil error:nil];
+        [[NSUserDefaults standardUserDefaults]setObject:[NSNumber numberWithBool:YES] forKey:@"firstLaunch"];
+    }
     
     //专题
     Yejhd * yejhd = [[Yejhd alloc] init];

@@ -13,6 +13,6 @@
 
 @synthesize result;
 @synthesize info;
-@synthesize webconde;
+@synthesize webcode;
 
 @end

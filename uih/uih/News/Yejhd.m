@@ -82,7 +82,7 @@ static int typeid=1;
     [btnHome setTitle:@"登录" forState:UIControlStateNormal];
     [btnHome setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     btnHome.titleLabel.font=[UIFont systemFontOfSize:16];
-    [btnHome addTarget:self action:@selector(home) forControlEvents:UIControlEventTouchUpInside];
+    [btnHome addTarget:self action:@selector(login) forControlEvents:UIControlEventTouchUpInside];
     
     BarButtonItem= [[UIBarButtonItem alloc] initWithCustomView:btnHome];
     self.navigationItem.rightBarButtonItem = BarButtonItem;
@@ -111,9 +111,11 @@ static int typeid=1;
 }
 
 
-- (void)home
+- (void)login
 {
+    login *logini = [[login alloc] init];
     
+    [self.navigationController pushViewController:logini animated:NO];
     
 }
 

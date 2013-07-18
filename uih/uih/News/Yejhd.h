@@ -14,6 +14,7 @@
 #import "NewsEntity.h"
 #import "NewsContent.h"
 #import "YGPSegmentedController.h"
+#import "login.h"
 
 @interface Yejhd : UIViewController<UITableViewDelegate,UITableViewDataSource,MBProgressHUDDelegate, UITabBarControllerDelegate,UIAlertViewDelegate,YGPSegmentedControllerDelegate>
 {

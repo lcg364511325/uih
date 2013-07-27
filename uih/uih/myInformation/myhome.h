@@ -13,6 +13,7 @@
 #import "AppDelegate.h"
 #import "FileHelpers.h"
 #import "ImageCacher.h"
+#import "baseInformation.h"
 
 @interface myhome : UIViewController
 

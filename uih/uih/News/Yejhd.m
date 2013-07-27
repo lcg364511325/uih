@@ -60,6 +60,8 @@ static int typeid=1;
     [self.view setBackgroundColor:[Tool getBackgroundColor]];
     [self.tableLists setBackgroundColor:[Tool getBackgroundColor]];
     
+    self.tableLists.separatorColor = [Tool getseparatorColor];//设置行间隔边框
+    
     //定制导航栏左按钮
     UIImage* image= [UIImage imageNamed:@"return"];
     CGRect frame_1= CGRectMake(0, 0, image.size.width, image.size.height);

@@ -37,6 +37,7 @@
 
 + (UIColor *)getBackgroundColor;
 + (UIColor *)getCellBackgroundColor;
++ (UIColor *)getseparatorColor;
 
 + (int)getTextViewHeight:(UITextView *)txtView andUIFont:(UIFont *)font andText:(NSString *)txt;
 

@@ -55,6 +55,13 @@
 		7C084A3517952DF900B354B7 /* greenclick.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C084A2F17952DF900B354B7 /* greenclick.png */; };
 		7C084A3617952DF900B354B7 /* greenclick@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C084A3017952DF900B354B7 /* greenclick@2x.png */; };
 		7C084A3717952DF900B354B7 /* greenclick@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C084A3117952DF900B354B7 /* greenclick@3x.png */; };
+		7C23C30117A39B6A00711756 /* FlatDatePicker-Icon-Check.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C23C2FB17A39B6A00711756 /* FlatDatePicker-Icon-Check.png */; };
+		7C23C30217A39B6A00711756 /* FlatDatePicker-Icon-Check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C23C2FC17A39B6A00711756 /* FlatDatePicker-Icon-Check@2x.png */; };
+		7C23C30317A39B6A00711756 /* FlatDatePicker-Icon-Close.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C23C2FD17A39B6A00711756 /* FlatDatePicker-Icon-Close.png */; };
+		7C23C30417A39B6A00711756 /* FlatDatePicker-Icon-Close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C23C2FE17A39B6A00711756 /* FlatDatePicker-Icon-Close@2x.png */; };
+		7C23C30517A39B6A00711756 /* FlatDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C23C30017A39B6A00711756 /* FlatDatePicker.m */; };
+		7C28B70A179FBEE70098A652 /* row_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C28B708179FBEE70098A652 /* row_line.png */; };
+		7C28B70B179FBEE70098A652 /* row_line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C28B709179FBEE70098A652 /* row_line@2x.png */; };
 		7C8E938917731FFD00D99B37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8E938817731FFD00D99B37 /* UIKit.framework */; };
 		7C8E938B17731FFD00D99B37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8E938A17731FFD00D99B37 /* Foundation.framework */; };
 		7C8E939317731FFD00D99B37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C8E939117731FFD00D99B37 /* InfoPlist.strings */; };
@@ -227,6 +234,13 @@
 		7CB5EB6A178EBF6600281392 /* zan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5EB19178EBF6600281392 /* zan@2x.png */; };
 		7CB5EB6E178ED05C00281392 /* NewsContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5EB6C178ED05C00281392 /* NewsContent.m */; };
 		7CB5EB6F178ED05C00281392 /* NewsContent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5EB6D178ED05C00281392 /* NewsContent.xib */; };
+		7CF1ACF917A134D90060DD0A /* AFPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF1ACF817A134D90060DD0A /* AFPickerView.m */; };
+		7CF1AD0017A13D870060DD0A /* PickerBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CF1ACFA17A13D870060DD0A /* PickerBG.png */; };
+		7CF1AD0117A13D870060DD0A /* PickerBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CF1ACFB17A13D870060DD0A /* PickerBG@2x.png */; };
+		7CF1AD0217A13D870060DD0A /* pickerGlass.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CF1ACFC17A13D870060DD0A /* pickerGlass.png */; };
+		7CF1AD0317A13D870060DD0A /* pickerGlass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CF1ACFD17A13D870060DD0A /* pickerGlass@2x.png */; };
+		7CF1AD0417A13D870060DD0A /* PickerShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CF1ACFE17A13D870060DD0A /* PickerShadow.png */; };
+		7CF1AD0517A13D870060DD0A /* PickerShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CF1ACFF17A13D870060DD0A /* PickerShadow@2x.png */; };
 		7CF3FF28179674AC0010DDE7 /* login.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF3FF26179674AC0010DDE7 /* login.m */; };
 		7CF3FF29179674AC0010DDE7 /* login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CF3FF27179674AC0010DDE7 /* login.xib */; };
 		7CF3FF2E1796958E0010DDE7 /* myhome.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF3FF2C1796958E0010DDE7 /* myhome.m */; };
@@ -239,6 +253,8 @@
 		7CF6DC411797E51500FFB22E /* wenhao.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CF6DC3E1797E51500FFB22E /* wenhao.png */; };
 		7CF6DC421797E51500FFB22E /* wenhao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CF6DC3F1797E51500FFB22E /* wenhao@2x.png */; };
 		7CF6DC431797E51500FFB22E /* wenhao@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CF6DC401797E51500FFB22E /* wenhao@3x.png */; };
+		7CF83F4E179E8F1F00D592F2 /* baseInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF83F4C179E8F1F00D592F2 /* baseInformation.m */; };
+		7CF83F4F179E8F1F00D592F2 /* baseInformation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CF83F4D179E8F1F00D592F2 /* baseInformation.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -321,6 +337,14 @@
 		7C084A2F17952DF900B354B7 /* greenclick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenclick.png; sourceTree = "<group>"; };
 		7C084A3017952DF900B354B7 /* greenclick@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greenclick@2x.png"; sourceTree = "<group>"; };
 		7C084A3117952DF900B354B7 /* greenclick@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greenclick@3x.png"; sourceTree = "<group>"; };
+		7C23C2FB17A39B6A00711756 /* FlatDatePicker-Icon-Check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FlatDatePicker-Icon-Check.png"; sourceTree = "<group>"; };
+		7C23C2FC17A39B6A00711756 /* FlatDatePicker-Icon-Check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FlatDatePicker-Icon-Check@2x.png"; sourceTree = "<group>"; };
+		7C23C2FD17A39B6A00711756 /* FlatDatePicker-Icon-Close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FlatDatePicker-Icon-Close.png"; sourceTree = "<group>"; };
+		7C23C2FE17A39B6A00711756 /* FlatDatePicker-Icon-Close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FlatDatePicker-Icon-Close@2x.png"; sourceTree = "<group>"; };
+		7C23C2FF17A39B6A00711756 /* FlatDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatDatePicker.h; sourceTree = "<group>"; };
+		7C23C30017A39B6A00711756 /* FlatDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlatDatePicker.m; sourceTree = "<group>"; };
+		7C28B708179FBEE70098A652 /* row_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = row_line.png; sourceTree = "<group>"; };
+		7C28B709179FBEE70098A652 /* row_line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "row_line@2x.png"; sourceTree = "<group>"; };
 		7C8E938517731FFD00D99B37 /* uih.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uih.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8E938817731FFD00D99B37 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7C8E938A17731FFD00D99B37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -499,6 +523,14 @@
 		7CB5EB6B178ED05B00281392 /* NewsContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsContent.h; path = News/NewsContent.h; sourceTree = "<group>"; };
 		7CB5EB6C178ED05C00281392 /* NewsContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsContent.m; path = News/NewsContent.m; sourceTree = "<group>"; };
 		7CB5EB6D178ED05C00281392 /* NewsContent.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewsContent.xib; path = News/NewsContent.xib; sourceTree = "<group>"; };
+		7CF1ACF717A134D90060DD0A /* AFPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPickerView.h; sourceTree = "<group>"; };
+		7CF1ACF817A134D90060DD0A /* AFPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPickerView.m; sourceTree = "<group>"; };
+		7CF1ACFA17A13D870060DD0A /* PickerBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PickerBG.png; sourceTree = "<group>"; };
+		7CF1ACFB17A13D870060DD0A /* PickerBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PickerBG@2x.png"; sourceTree = "<group>"; };
+		7CF1ACFC17A13D870060DD0A /* pickerGlass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pickerGlass.png; sourceTree = "<group>"; };
+		7CF1ACFD17A13D870060DD0A /* pickerGlass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pickerGlass@2x.png"; sourceTree = "<group>"; };
+		7CF1ACFE17A13D870060DD0A /* PickerShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PickerShadow.png; sourceTree = "<group>"; };
+		7CF1ACFF17A13D870060DD0A /* PickerShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PickerShadow@2x.png"; sourceTree = "<group>"; };
 		7CF3FF25179674AC0010DDE7 /* login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = login.h; sourceTree = "<group>"; };
 		7CF3FF26179674AC0010DDE7 /* login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = login.m; sourceTree = "<group>"; };
 		7CF3FF27179674AC0010DDE7 /* login.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = login.xib; sourceTree = "<group>"; };
@@ -515,6 +547,9 @@
 		7CF6DC3E1797E51500FFB22E /* wenhao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wenhao.png; sourceTree = "<group>"; };
 		7CF6DC3F1797E51500FFB22E /* wenhao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wenhao@2x.png"; sourceTree = "<group>"; };
 		7CF6DC401797E51500FFB22E /* wenhao@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wenhao@3x.png"; sourceTree = "<group>"; };
+		7CF83F4B179E8F1F00D592F2 /* baseInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseInformation.h; sourceTree = "<group>"; };
+		7CF83F4C179E8F1F00D592F2 /* baseInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseInformation.m; sourceTree = "<group>"; };
+		7CF83F4D179E8F1F00D592F2 /* baseInformation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = baseInformation.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -696,6 +731,19 @@
 			path = YGPSemgmented;
 			sourceTree = "<group>";
 		};
+		7C23C2FA17A39B6A00711756 /* FlatDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				7C23C2FB17A39B6A00711756 /* FlatDatePicker-Icon-Check.png */,
+				7C23C2FC17A39B6A00711756 /* FlatDatePicker-Icon-Check@2x.png */,
+				7C23C2FD17A39B6A00711756 /* FlatDatePicker-Icon-Close.png */,
+				7C23C2FE17A39B6A00711756 /* FlatDatePicker-Icon-Close@2x.png */,
+				7C23C2FF17A39B6A00711756 /* FlatDatePicker.h */,
+				7C23C30017A39B6A00711756 /* FlatDatePicker.m */,
+			);
+			path = FlatDatePicker;
+			sourceTree = "<group>";
+		};
 		7C8E937C17731FFC00D99B37 = {
 			isa = PBXGroup;
 			children = (
@@ -733,6 +781,8 @@
 		7C8E938E17731FFD00D99B37 /* uih */ = {
 			isa = PBXGroup;
 			children = (
+				7C23C2FA17A39B6A00711756 /* FlatDatePicker */,
+				7CF1ACF617A134D90060DD0A /* AFPickerView */,
 				7CF6DC4F1798077400FFB22E /* helpCenter */,
 				7CF6DC4E1798075F00FFB22E /* myBox */,
 				7CF6DC4D1798074900FFB22E /* recharge */,
@@ -782,6 +832,14 @@
 		7CB5EA26178EBEF000281392 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7CF1ACFA17A13D870060DD0A /* PickerBG.png */,
+				7CF1ACFB17A13D870060DD0A /* PickerBG@2x.png */,
+				7CF1ACFC17A13D870060DD0A /* pickerGlass.png */,
+				7CF1ACFD17A13D870060DD0A /* pickerGlass@2x.png */,
+				7CF1ACFE17A13D870060DD0A /* PickerShadow.png */,
+				7CF1ACFF17A13D870060DD0A /* PickerShadow@2x.png */,
+				7C28B708179FBEE70098A652 /* row_line.png */,
+				7C28B709179FBEE70098A652 /* row_line@2x.png */,
 				7CF6DC3E1797E51500FFB22E /* wenhao.png */,
 				7CF6DC3F1797E51500FFB22E /* wenhao@2x.png */,
 				7CF6DC401797E51500FFB22E /* wenhao@3x.png */,
@@ -963,6 +1021,15 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		7CF1ACF617A134D90060DD0A /* AFPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				7CF1ACF717A134D90060DD0A /* AFPickerView.h */,
+				7CF1ACF817A134D90060DD0A /* AFPickerView.m */,
+			);
+			path = AFPickerView;
+			sourceTree = "<group>";
+		};
 		7CF3FF241796747D0010DDE7 /* login */ = {
 			isa = PBXGroup;
 			children = (
@@ -979,6 +1046,9 @@
 				7CF3FF2B1796958E0010DDE7 /* myhome.h */,
 				7CF3FF2C1796958E0010DDE7 /* myhome.m */,
 				7CF3FF2D1796958E0010DDE7 /* myhome.xib */,
+				7CF83F4B179E8F1F00D592F2 /* baseInformation.h */,
+				7CF83F4C179E8F1F00D592F2 /* baseInformation.m */,
+				7CF83F4D179E8F1F00D592F2 /* baseInformation.xib */,
 			);
 			path = myInformation;
 			sourceTree = "<group>";
@@ -1318,6 +1388,19 @@
 				7CF6DC411797E51500FFB22E /* wenhao.png in Resources */,
 				7CF6DC421797E51500FFB22E /* wenhao@2x.png in Resources */,
 				7CF6DC431797E51500FFB22E /* wenhao@3x.png in Resources */,
+				7CF83F4F179E8F1F00D592F2 /* baseInformation.xib in Resources */,
+				7C28B70A179FBEE70098A652 /* row_line.png in Resources */,
+				7C28B70B179FBEE70098A652 /* row_line@2x.png in Resources */,
+				7CF1AD0017A13D870060DD0A /* PickerBG.png in Resources */,
+				7CF1AD0117A13D870060DD0A /* PickerBG@2x.png in Resources */,
+				7CF1AD0217A13D870060DD0A /* pickerGlass.png in Resources */,
+				7CF1AD0317A13D870060DD0A /* pickerGlass@2x.png in Resources */,
+				7CF1AD0417A13D870060DD0A /* PickerShadow.png in Resources */,
+				7CF1AD0517A13D870060DD0A /* PickerShadow@2x.png in Resources */,
+				7C23C30117A39B6A00711756 /* FlatDatePicker-Icon-Check.png in Resources */,
+				7C23C30217A39B6A00711756 /* FlatDatePicker-Icon-Check@2x.png in Resources */,
+				7C23C30317A39B6A00711756 /* FlatDatePicker-Icon-Close.png in Resources */,
+				7C23C30417A39B6A00711756 /* FlatDatePicker-Icon-Close@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1364,6 +1447,9 @@
 				7CF3FF2E1796958E0010DDE7 /* myhome.m in Sources */,
 				7CF3FF371796BBFA0010DDE7 /* FileHelpers.m in Sources */,
 				7CF3FF381796BBFA0010DDE7 /* ImageCacher.m in Sources */,
+				7CF83F4E179E8F1F00D592F2 /* baseInformation.m in Sources */,
+				7CF1ACF917A134D90060DD0A /* AFPickerView.m in Sources */,
+				7C23C30517A39B6A00711756 /* FlatDatePicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

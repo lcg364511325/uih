@@ -132,6 +132,12 @@
     return [self colorFromHexRGB:@"A7D3A2"];
 }
 
++ (UIColor *)getseparatorColor
+{
+    //return [UIColor colorWithRed:235.0/255 green:235.0/255 blue:243.0/255 alpha:1.0];
+    return [self colorFromHexRGB:@"4B9442"];
+}
+
 + (NSString *)getHTMLString:(NSString *)html
 {
     return html;

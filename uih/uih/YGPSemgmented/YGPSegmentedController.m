@@ -38,7 +38,7 @@ static int widthbutton=50;
          
          self.frame =CGRectZero;
          YGPScrollView = [[UIScrollView alloc]initWithFrame:CGRectZero];
-         SelectedTagChang = 1;
+         SelectedTagChang = 100;
        
          [self SetScrollview];     //setup
          [self setSelectedIndex:0];
@@ -94,7 +94,7 @@ static int widthbutton=50;
           
           if (i==0)
           {
-               SegmentedButton.selected=NO;
+               SegmentedButton.selected=YES;
           }
           
           [SegmentedButton setTitle:[NSString stringWithFormat:@"%@",[self.TitleArray objectAtIndex:i]] forState:UIControlStateNormal];

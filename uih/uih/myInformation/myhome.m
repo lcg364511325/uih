@@ -20,6 +20,7 @@
 @synthesize desire;
 @synthesize headimg;
 @synthesize scrollview;
+static ProfileEntity *proentity;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -44,7 +45,9 @@
     //设置标题
     self.title=@"家园互动平台";
     
-    self.scrollview.contentSize = CGSizeMake(340.0,750.0);
+    CGSize contentSize=CGSizeMake(340.0, 750);
+    [scrollview setContentSize:contentSize];
+    //[scrollview setContentOffset:CGPointMake(0, 380) animated:YES];
     
     //设置导航栏底图
     [self.navigationController.navigationBar setBackgroundImage:[Tool headbg] forBarMetrics:UIBarMetricsDefault];
@@ -102,20 +105,20 @@
         
         DataService * ds = [[DataService alloc] init];
         
-        ProfileEntity * obj = [ds schoolPersonnel:myDelegate.username];
-        if(obj){
-            NSString * Sexual=obj.Sexual;
+        proentity = [ds schoolPersonnel:myDelegate.username];
+        if(proentity){
+            NSString * Sexual=proentity.Sexual;
             NSString * Sexualname=@"男孩";
             NSMutableString* sexstr=[NSMutableString stringWithFormat:@"1"];
             if([sexstr isEqualToString:Sexual]){
                 Sexualname=@"女孩";
             }
             
-            self.nickname.text=[NSString stringWithFormat:@"%@ 小小世界",obj.PetName];
-            self.others.text=[NSString stringWithFormat:@"全名：%@   %@  %@",obj.RealName,obj.Constellation,Sexualname];
+            self.nickname.text=[NSString stringWithFormat:@"%@ 小小世界",proentity.PetName];
+            self.others.text=[NSString stringWithFormat:@"全名：%@   %@  %@",proentity.RealName,proentity.Constellation,Sexualname];
             
             
-            NSURL *imgUrl=[NSURL URLWithString:obj.PortraitPath];
+            NSURL *imgUrl=[NSURL URLWithString:proentity.PortraitPath];
             if (hasCachedImage(imgUrl)) {
                 
                 [self.headimg setImage:[UIImage imageWithContentsOfFile:pathForURL(imgUrl)]];
@@ -161,6 +164,15 @@
 -(void)goprofile
 {
     NSLog(@"-----ssssssssssss");
+    
+    baseInformation *nDetail = [[baseInformation alloc] init];
+    
+    //NewsContent *nDetail = [[NewsContent alloc] init];
+    nDetail.proEntity = proentity;
+    //nDetail.isNextPage = NO;
+    
+    [self.navigationController pushViewController:nDetail animated:NO];
+    
 }
 
 //进入我的愿望列表
@@ -207,7 +219,7 @@
             
             break;
         case 9:
-            
+            [self goprofile];
             break;
         case 10:
             

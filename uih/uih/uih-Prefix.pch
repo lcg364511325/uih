@@ -22,7 +22,7 @@
 
     /*接口地址*/
     //域名
-    #define domain  @"http://192.168.1.105:9044/"
+    #define domain  @"http://183.31.132.240:9044/"
 
     //养儿囧好大
     #define api_news_yejhd @"Application/nologininformation.ashx?action=loadInformation&ArticleType=5"
